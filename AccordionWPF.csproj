@@ -1,0 +1,314 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{A161835E-648F-4F56-AFD3-D25048089064}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>AccordionWPF</RootNamespace>
+    <AssemblyName>AccordionWPF</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{60dc8134-eba5-43b8-bcc9-bb4bc16c2548};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Xaml">
+      <RequiredTargetFramework>4.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="WindowsBase" />
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+  </ItemGroup>
+  <ItemGroup>
+    <ApplicationDefinition Include="App.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </ApplicationDefinition>
+    <Page Include="Directions.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="MainWindow.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Compile Include="App.xaml.cs">
+      <DependentUpon>App.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Directions.xaml.cs">
+      <DependentUpon>Directions.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="MainWindow.xaml.cs">
+      <DependentUpon>MainWindow.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <AppDesigner Include="Properties\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="PlayingCards\AC.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="PlayingCards\AD.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="PlayingCards\AH.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="PlayingCards\AS.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="PlayingCards\b1fh.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="PlayingCards\b1fv.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="PlayingCards\b1pb.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="PlayingCards\b1pl.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="PlayingCards\b1pr.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="PlayingCards\b1pt.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="PlayingCards\b2fh.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="PlayingCards\b2fv.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="PlayingCards\b2pb.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="PlayingCards\b2pl.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="PlayingCards\b2pr.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="PlayingCards\b2pt.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="PlayingCards\EightC.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="PlayingCards\EightD.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="PlayingCards\EightH.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="PlayingCards\EightS.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="PlayingCards\FiveC.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="PlayingCards\FiveD.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="PlayingCards\FiveH.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="PlayingCards\FiveS.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="PlayingCards\FourC.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="PlayingCards\FourD.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="PlayingCards\FourH.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="PlayingCards\FourS.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="PlayingCards\JC.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="PlayingCards\JD.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="PlayingCards\JH.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="PlayingCards\Joker1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="PlayingCards\Joker2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="PlayingCards\JS.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="PlayingCards\KC.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="PlayingCards\KD.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="PlayingCards\KH.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="PlayingCards\KS.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="PlayingCards\NineC.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="PlayingCards\NineD.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="PlayingCards\NineH.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="PlayingCards\NineS.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="PlayingCards\QC.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="PlayingCards\QD.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="PlayingCards\QH.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="PlayingCards\QS.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="PlayingCards\SevenC.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="PlayingCards\SevenD.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="PlayingCards\SevenH.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="PlayingCards\SevenS.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="PlayingCards\SixC.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="PlayingCards\SixD.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="PlayingCards\SixH.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="PlayingCards\SixS.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="PlayingCards\TenC.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="PlayingCards\TenD.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="PlayingCards\TenH.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="PlayingCards\TenS.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="PlayingCards\ThreeC.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="PlayingCards\ThreeD.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="PlayingCards\ThreeH.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="PlayingCards\ThreeS.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="PlayingCards\TwoC.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="PlayingCards\TwoD.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="PlayingCards\TwoH.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="PlayingCards\TwoS.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Resources\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

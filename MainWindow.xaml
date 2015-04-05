@@ -1,0 +1,15 @@
+﻿<Window x:Name="MainWindow1" x:Class="AccordionWPF.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Accordion" Height="600" Width="800" Loaded="MainWindow1_Loaded">
+    <Grid>
+        <WrapPanel x:Name="wpGameBoard" AllowDrop="True" HorizontalAlignment="Left" Height="420" Margin="37,51,0,0" VerticalAlignment="Top" Width="693" />
+        <Button x:Name="btnDrawCard" Content="Draw Card" HorizontalAlignment="Left" Margin="360,511,0,0" VerticalAlignment="Top" Width="84" Click="btnDrawCard_Click" FontFamily="Arial" Height="35" RenderTransformOrigin="0.333,4.083" />
+        <Button x:Name="btnInitGame" Content="New Game" HorizontalAlignment="Left" Margin="86,511,0,0" VerticalAlignment="Top" Width="79" Click="btnInitGame_Click" Height="35"/>
+        <Button x:Name="btnResetGame" Content="Reset" HorizontalAlignment="Left" Margin="666,511,0,0" VerticalAlignment="Top" Width="84" FontFamily="Arial" Height="35" RenderTransformOrigin="0.48,1.583" />
+
+        <Label Content="Number of cards in deck:" HorizontalAlignment="Left" Margin="21,6,0,524" Width="140"/>
+        <TextBox x:Name="tbxDeckSize" HorizontalAlignment="Left" Height="23" Margin="244,10,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="61"/>
+
+    </Grid>
+</Window>
